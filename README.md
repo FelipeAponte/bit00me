@@ -2,4 +2,4 @@
 
 Este es el primer proyecto del bootcamp de REACT
 
-### Autor: Andres Aponte
+Autor: Andres Aponte
