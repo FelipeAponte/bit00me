@@ -1,0 +1,23 @@
+h1, h2, h3 {
+    color: #1f495a;
+}
+
+figure {
+    margin-left: 250px;
+}
+
+dt {
+    color: black;
+}
+
+body {
+    background-color: #f0ead2;
+}
+
+#send {
+    background-color: #6a994e;
+}
+
+#clear {
+    background-color: #00f5d4;
+}
