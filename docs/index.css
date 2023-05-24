@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -11,7 +11,6 @@ html {
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.2rem;
     min-height: 100%;
 }
 
@@ -24,22 +23,38 @@ body {
 
 .header {
     grid-area: header;
+    background-color: #537188;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar {
     grid-area: navbar;
+    background-color: #CBB279;
 }
 
 .main {
     grid-area: main;
+    background-color: #E1D4BB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main figure img {
+    width: 80%;
+    border-radius: 20%;
 }
 
 .sidebar {
     grid-area: sidebar;
+    background-color: #EEEEEE;
 }
 
 .footer {
     grid-area: footer;
+    background-color: #537188;
 }
 
 .grid-container {
@@ -61,7 +76,7 @@ body {
             "navbar     navbar"     50px
             "sidebar    main"       auto
             "footer     footer"     100px /
-            200px       auto;
+            250px       auto;
     }
 }
 
