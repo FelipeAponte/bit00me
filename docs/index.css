@@ -1,23 +1,77 @@
-h1, h2, h3 {
-    color: #1f495a;
-}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-figure {
-    margin-left: 20px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
-dt {
-    color: black;
+html {
+    height: 100%;
 }
 
 body {
-    background-color: #f0ead2;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
 }
 
-#send {
-    background-color: #6a994e;
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
 }
 
-#clear {
-    background-color: #00f5d4;
+.header {
+    grid-area: header;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.main {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template: 
+            "header"    100px
+            "navbar"    50px
+            "main"      auto
+            "sidebar"   200px
+            "footer"    100px /
+            auto;
+}
+
+@media (min-width: 600px){  
+    .grid-container {
+        grid-template: 
+            "header     header"     100px
+            "navbar     navbar"     50px
+            "sidebar    main"       auto
+            "footer     footer"     100px /
+            200px       auto;
+    }
+}
+
+
+@media (min-width: 900px){  
+    .grid-container {
+        grid-template: 
+            "header     header      header"     100px
+            "navbar     main        sidebar"     auto
+            "footer     footer      footer"     100px /
+            300px       auto        300px;
+    }
 }
