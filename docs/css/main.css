@@ -1,6 +1,6 @@
 :root {
     --theme-color: white;
-    --primary-color: #124f88;
+    --primary-color: #1B365D;
     --secundary-color: #f7c331;
     --text-color-inverse: white;
     --text-color: black;
@@ -12,9 +12,32 @@ body {
     font-family: 'Ubuntu', sans-serif;
     background-color: var(--theme-color);
     color: var(--text-color);
+    padding-top: 70px;
 }
 
 a {
     text-decoration: none;
     color: var(--text-color);
+}
+
+.horizontal-padding {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.vertical-padding {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+@media (min-width: 800px) {
+    .horizontal-padding {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    
+    .vertical-padding {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
 }
