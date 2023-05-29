@@ -50,7 +50,7 @@
 }
 
 .profile-btn:hover {
-    filter: brightness(130%)
+    filter: brightness(130%);
 }
 
 @media (min-width: 700px) {

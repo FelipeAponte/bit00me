@@ -1,6 +1,10 @@
 const menu = document.querySelector(".menu");
 const openMenuBtn  = document.querySelector(".open-menu");
 const closeMenuBtn = document.querySelector(".close-menu");
+const sendBtn = document.getElementById("sendBtn");
+const modal = document.querySelector(".modal");
+const closeModal = document.querySelector(".modal-close");
+const modalImage = document.querySelector(".modal-image");
 
 function toggleMenu() {
     menu.classList.toggle("menu_opened");
@@ -15,4 +19,37 @@ menuLinks.forEach(menuLink => {
     menuLink.addEventListener("click", function(){
         menu.classList.remove("menu_opened");
     });
+});
+
+sendBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const message = document.getElementById("message");
+    const response = document.getElementById("response");
+    console.log(typeof name.value, name.value);
+
+    let A = name.value === "";
+    let B = email.value == "";
+    let C = message.value == "";
+
+    console.log(A, B, C);
+
+    if (A || B || C) {
+        modalImage.src = "images/error.png";
+        response.textContent = "Por favor ingrese todos los datos solicitados";
+    } else {
+        modalImage.src = "images/check.svg";
+        response.textContent = "¡Gracias! pronto estaré en contacto";
+    }
+
+    // console.log(name, message);
+
+    modal.classList.add("modal--show");
+    
+});
+
+closeModal.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.classList.remove("modal--show");
 });
