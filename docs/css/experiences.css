@@ -30,7 +30,7 @@
 .experience-date {
     font-size: 25px;
     font-weight: 700;
-    color: var(--secundary-color);
+    color: var(--secondary-color);
 }
 
 .experience-company {
@@ -43,6 +43,7 @@
     font-weight: 500;
     font-size: 18px;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .experience-descipttion {
@@ -66,33 +67,16 @@
         margin: 25px;
     }
     
-    .experience-date {
-        font-size: 25px;
-        font-weight: 700;
-        color: var(--secundary-color);
-    }
-    
     .experience-company {
         font-size: 20px;
         text-transform: uppercase;
         margin-top: 5px;
     }
-    
-    .experience-position {
-        font-weight: 500;
-        font-size: 18px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-    
-    .experience-descipttion {
-        font-weight: 400;
-        font-size: 15px;
-        margin-top: 10px;
-    }
+
     .experience {
         padding: 0;
     }
+
     .experience_left {
         text-align: right;
     }
