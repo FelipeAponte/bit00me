@@ -26,6 +26,7 @@
 .modal-image {
     width: 40%;
     border-radius: 14px;
+    margin-top: 25px;
 }
 
 .modal-close {
